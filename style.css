@@ -314,6 +314,7 @@ body.sidebar-collapsed main {
   margin-top: 5rem;
   height: 500px;
   padding: 10px;
+  margin-bottom: 5rem;
 }
 
 .sobre-mi .contenedor {
@@ -337,6 +338,7 @@ body.sidebar-collapsed main {
   .cards-container {
     justify-content: center;
     margin: 10px;
+    text-align: center;
   } 
   .card {
     background-color: var(--sections-background);
@@ -692,7 +694,7 @@ h1 {
 }
 
 .contacto .rectangulo {
-  margin-top: -5rem;
+  margin-top: 10rem;
   background: linear-gradient(155deg, rgb(13, 110, 253), #00fffc);
   /* background-color: rgb(13, 110, 253); */
   border-radius: 10px;
