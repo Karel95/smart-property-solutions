@@ -132,11 +132,11 @@ nav a:hover {
 
 .navbar-nav li:nth-child(3):hover~span {
   left: 215px;
-  width: 80px;
+  width: 75px;
 }
 
 .navbar-nav li:nth-child(4):hover~span {
-  left: 295px;
+  left: 290px;
   width: 80px;
 }
 
