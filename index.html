@@ -1484,11 +1484,9 @@
         const userLang = navigator.language || navigator.userLanguage;
 
         // Mostrar el código de idioma en la consola
-        console.log(userLang);
         const defaultLang = userLang.substr(0, 2); // Extraer solo el código de idioma (es, en, etc.)
 
         // Configurar el contenido de la página con el idioma por defecto
-        console.log(defaultLang);
         if (defaultLang == "es") {
           location.href = "es/index.html";
         }
