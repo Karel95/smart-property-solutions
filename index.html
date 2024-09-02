@@ -45,7 +45,6 @@
         --sections-background: #f5f5f5;
         --borders-color: #e0e0e0;
         --card-bg-color: #ffffff;
-        --sidebar-collapsed-width: 1rem;
         --footer-height: 60px;
       }
       /*  */
@@ -96,10 +95,6 @@
       }
 
       /* header */
-      body.sidebar-collapsed {
-        grid-template-columns: var(--sidebar-collapsed-width) 1fr;
-      }
-
       header {
         grid-area: header;
         background-color: var(--sections-background);
@@ -346,10 +341,6 @@
         transition: margin-left 0.3s ease;
       }
 
-      body.sidebar-collapsed main {
-        min-width: 90vw;
-      }
-
       /* hero */
 
       .hero {
@@ -406,7 +397,7 @@
 
       /* carouseL */
       .carousel-inner {
-        width: 100vw;
+        width: 100%;
       }
 
       /* sobre mi */
@@ -601,6 +592,7 @@
       }
 
       .footer-texto {
+        color: var(--text-primary-color);
         font-size: 1.5rem;
         padding: 20px;
         margin-bottom: 30px;
@@ -647,7 +639,7 @@
 
       .derechos-de-autor {
         font-size: 15px;
-        color: #aeaeae;
+        color: var(--text-secondary-color);
         padding: 20px;
       }
 
@@ -663,13 +655,6 @@
           font-size: 40px;
         }
       }
-
-      @media screen and (max-width: 767px) {
-        .navbar-brand {
-          display: none;
-        }
-      }
-
       @media screen and (min-width: 992px) {
         header {
           height: var(--header-height);
@@ -685,6 +670,13 @@
       }
 
       @media screen and (max-width: 991px) {
+        body {
+          grid-template-areas:
+            "header"
+            "main"
+            "footer";
+          grid-template-columns: 1fr;
+        }
         .navbar {
           margin: 0rem;
           padding: 0rem;
@@ -702,6 +694,18 @@
           font-weight: bold;
         }
 
+        .navbar-nav span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 75px;
+        height: 99%;
+        background: linear-gradient(45deg, #2e3192, #1bffff);
+        border-radius: 8px;
+        transition: 0.5s ease;
+        z-index: 2;
+      }
+
         .mode-switcher {
           position: fixed;
           top: 1.5rem;
@@ -718,32 +722,6 @@
         main {
           margin-top: 6rem;
           padding: 0;
-        }
-      }
-
-      @media screen and (min-width: 700px) {
-        .hero-inferior-imagen {
-          max-width: 600px;
-        }
-      }
-
-      @media screen and (min-width: 768px) {
-        .sidebar-collapsed main {
-          margin-left: 4rem;
-        }
-      }
-
-      @media (max-width: 768px) {
-        body {
-          grid-template-areas:
-            "header"
-            "main"
-            "footer";
-          grid-template-columns: 1fr;
-        }
-
-        .sidebar {
-          display: none;
         }
       }
     </style>
@@ -831,6 +809,7 @@
                       src="./images/recurrentes/safe-box.png"
                       class="img-fluid"
                       alt="Cajas de Seguridad"
+                      loading="lazy"
                     />
                   </div>
                   <div class="col-9 pl-3">Safe Deposit Boxes</div>
@@ -859,6 +838,7 @@
                       src="./images/recurrentes/glass-window.png"
                       class="img-fluid"
                       alt="Puerta Corrediza"
+                      loading="lazy"
                     />
                   </div>
                   <div class="col-9 pl-3">Sliding Door</div>
@@ -873,6 +853,7 @@
                       src="./images/recurrentes/open-door.png"
                       class="img-fluid"
                       alt="Para Habitacion"
+                      loading="lazy"
                     />
                   </div>
                   <div class="col-9 pl-3">FOR ROOM</div>
@@ -887,6 +868,7 @@
                       src="./images/recurrentes/cameras.png"
                       class="img-fluid"
                       alt="SMART VIEW"
+                      loading="lazy"
                     />
                   </div>
                   <div class="col-9 pl-3">SMART VIEW</div>
@@ -901,6 +883,7 @@
                       src="./images/recurrentes/airbnb.png"
                       class="img-fluid"
                       alt="AIRBnB"
+                      loading="lazy"
                     />
                   </div>
                   <div class="col-9 pl-3">AIRBnB</div>
@@ -915,6 +898,7 @@
                       src="./images/recurrentes/home-connect.png"
                       class="img-fluid"
                       alt="SMART HOME"
+                      loading="lazy"
                     />
                   </div>
                   <div class="col-9 pl-3">SMART HOME</div>
@@ -929,6 +913,7 @@
                       src="./images/recurrentes/door-violet.png"
                       class="img-fluid"
                       alt="HOTELERAS"
+                      loading="lazy"
                     />
                   </div>
                   <div class="col-9 pl-3">HOTEL</div>
@@ -943,6 +928,7 @@
                       src="./images/recurrentes/fence.png"
                       class="img-fluid"
                       alt="PARA EXTERIOR / REJA"
+                      loading="lazy"
                     />
                   </div>
                   <div class="col-9 pl-3">FOR OUTDOOR / GRILLE</div>
@@ -957,6 +943,7 @@
                       src="./images/recurrentes/tools.png"
                       class="img-fluid"
                       alt="REFACCIONES"
+                      loading="lazy"
                     />
                   </div>
                   <div class="col-9 pl-3">PARTS</div>
@@ -971,6 +958,7 @@
                       src="./images/recurrentes/combos.png"
                       class="img-fluid"
                       alt="COMBOS"
+                      loading="lazy"
                     />
                   </div>
                   <div class="col-9 pl-3">COMBOS</div>
@@ -985,6 +973,7 @@
                       src="./images/recurrentes/lock.png"
                       class="img-fluid"
                       alt="Padlocks"
+                      loading="lazy"
                     />
                   </div>
                   <div class="col-9 pl-3">Padlocks</div>
