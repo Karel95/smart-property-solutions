@@ -1484,16 +1484,10 @@
         // Language toggle functionality
         const langIcon = document.getElementById("lang-icon");
         const langToggle = document.getElementById("lang-toggle");
-        let checked = true;
 
         // Agregar evento listener al botón para cambiar el idioma
         langToggle.addEventListener("click", () => {
-          if (checked == false) {
-            location.href = "es/index.html";
-          } else {
-            location.href = "../index.html";
-          }
-          checked = true; // Cambiar el estado del check para alternar entre inglés y español
+          location.href = "../index.html";
         });
 
         // Traducciones
