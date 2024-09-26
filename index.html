@@ -407,6 +407,35 @@
         background-color: #27ae60;
       }
 
+      /* Colecciones */
+      .colecciones {
+        width: 100%;
+        margin-bottom: 3rem;
+      }
+
+      .scroll-container {
+        width: 100%; /* Ancho del área desplazable */
+        height: 300px;
+        display: flex; /* Flexbox para alinear los elementos horizontalmente */
+        overflow-x: scroll; /* Permite el desplazamiento horizontal */
+        padding: 10px;
+      }
+
+      .scroll-item {
+        flex-shrink: 0;
+        margin-right: 10px; /* Espaciado entre los elementos */
+        text-align: center;
+        line-height: 180px; /* Centra el texto verticalmente */
+      }
+
+      .card-title {
+        font-size: 1.5rem; /* Ajusta el tamaño de la fuente según lo necesario */
+        white-space: normal; /* Permite que el texto se ajuste automáticamente */
+        word-wrap: break-word; /* Ajusta la palabra si es muy larga */
+        word-break: break-word; /* Rompe la palabra si es necesario */
+        text-align: center; /* Opcional: Centrar el texto */
+      }
+
       /* carouseL */
       .carousel {
         width: 100%;
@@ -802,7 +831,7 @@
       aria-labelledby="offcanvasWithBothOptionsLabel"
     >
       <div class="offcanvas-header">
-        <h3 class="text-center mb-0 pt-4">COLECCIONES</h3>
+        <h3 class="text-center mb-0 pt-4">COLECTIONS</h3>
         <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5>
         <button
           type="button"
@@ -992,6 +1021,184 @@
     <main>
       <!-- Seccion Hero -->
       <section class="hero align-items-stretch"></section>
+
+      <!-- Colecciones -->
+      <section id="colections" class="colecciones">
+        <div class="container text-center">
+          <h1 class="servicesH1">Colections:</h1>
+          <div class="scroll-container">
+            <div
+              class="scroll-item text-center align-items-center"
+              style="width: 100px"
+            >
+              <img
+                class="card-img-top img-fluid"
+                src="./images/recurrentes/safe-box.png"
+                alt="Cajas de Seguridad"
+              />
+              <div class="card-body align-items-center">
+                <h5 class="card-title">Safe Deposit Boxes</h5>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+            </div>
+            <div
+              class="scroll-item text-center align-items-center"
+              style="width: 100px"
+            >
+              <img
+                class="card-img-top img-fluid"
+                src="./images/recurrentes/door-blue.png"
+                alt="Puerta Principal"
+              />
+              <div class="card-body align-items-center">
+                <h5 class="card-title">Main Door</h5>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+            </div>
+            <div
+              class="scroll-item text-center align-items-center"
+              style="width: 100px"
+            >
+              <img
+                class="card-img-top img-fluid"
+                src="./images/recurrentes/glass-window.png"
+                alt="Puerta Corrediza"
+              />
+              <div class="card-body align-items-center">
+                <h5 class="card-title">Sliding Door</h5>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+            </div>
+            <div
+              class="scroll-item text-center align-items-center"
+              style="width: 100px"
+            >
+              <img
+                class="card-img-top img-fluid"
+                src="./images/recurrentes/open-door.png"
+                alt="Para Habitacion"
+              />
+              <div class="card-body align-items-center">
+                <h5 class="card-title">For Room</h5>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+            </div>
+            <div
+              class="scroll-item text-center align-items-center"
+              style="width: 100px"
+            >
+              <img
+                class="card-img-top img-fluid"
+                src="./images/recurrentes/cameras.png"
+                alt="SMART VIEW"
+              />
+              <div class="card-body align-items-center">
+                <h5 class="card-title">Smart View</h5>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+            </div>
+            <div
+              class="scroll-item text-center align-items-center"
+              style="width: 100px"
+            >
+              <img
+                class="card-img-top img-fluid"
+                src="./images/recurrentes/airbnb.png"
+                alt="AIRBnB"
+              />
+              <div class="card-body align-items-center">
+                <h5 class="card-title">AirBnB</h5>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+            </div>
+            <div
+              class="scroll-item text-center align-items-center"
+              style="width: 100px"
+            >
+              <img
+                class="card-img-top img-fluid"
+                src="./images/recurrentes/home-connect.png"
+                alt="SMART HOME"
+              />
+              <div class="card-body align-items-center">
+                <h5 class="card-title">Smart Home</h5>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+            </div>
+            <div
+              class="scroll-item text-center align-items-center"
+              style="width: 100px"
+            >
+              <img
+                class="card-img-top img-fluid"
+                src="./images/recurrentes/door-violet.png"
+                alt="HOTELERAS"
+              />
+              <div class="card-body align-items-center">
+                <h5 class="card-title">Hotel</h5>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+            </div>
+            <div
+              class="scroll-item text-center align-items-center"
+              style="width: 100px"
+            >
+              <img
+                class="card-img-top img-fluid"
+                src="./images/recurrentes/fence.png"
+                alt="PARA EXTERIOR / REJA"
+              />
+              <div class="card-body align-items-center">
+                <h5 class="card-title">For Outdoor / Grille</h5>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+            </div>
+            <div
+              class="scroll-item text-center align-items-center"
+              style="width: 100px"
+            >
+              <img
+                class="card-img-top img-fluid"
+                src="./images/recurrentes/tools.png"
+                alt="REFACCIONES"
+              />
+              <div class="card-body align-items-center">
+                <h5 class="card-title">Parts</h5>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+            </div>
+            <div
+              class="scroll-item text-center align-items-center"
+              style="width: 100px"
+            >
+              <img
+                class="card-img-top img-fluid"
+                src="./images/recurrentes/combos.png"
+                alt="COMBOS"
+              />
+              <div class="card-body align-items-center">
+                <h5 class="card-title">Combos</h5>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+            </div>
+            <div
+              class="scroll-item text-center align-items-center"
+              style="width: 100px"
+            >
+              <img
+                class="card-img-top img-fluid"
+                src="./images/recurrentes/lock.png"
+                alt="Padlocks"
+              />
+              <div class="card-body align-items-center">
+                <h5 class="card-title">Padlocks</h5>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
 
       <!-- carousel -->
       <section
